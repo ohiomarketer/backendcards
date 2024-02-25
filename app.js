@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 
 connectDB();
 
-app.use('/api', require('./routes/app.routes'));
+app.use('/', require('./routes/app.routes'));
 
 app.listen(PORT, () => {
     console.log(`Server is running on port http://localhost:${PORT}`);
